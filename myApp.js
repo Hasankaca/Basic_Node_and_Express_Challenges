@@ -48,7 +48,7 @@ app.use('/public', express.static(__dirname + "/public"));
 /** 6) Use the .env file to configure the app */
 
 app.get("/json", function(req, res) {
-  var jsonResponse = { "message": "Hello json" };
+  var jsonResponse = { "message": "Hello Express" };
 
   if (process.env.MESSAGE_STYLE === "uppercase") {
     jsonResponse.message = jsonResponse.message.toUpperCase()
